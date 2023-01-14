@@ -1,0 +1,85 @@
+.page-search{
+    width: 100%;
+    max-width: 1600px;
+    height: 100vh;
+    margin: auto;
+    padding: 0 2rem 0 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+}
+
+.page-search .title{
+    width: 100%;
+    text-align: center;
+    color: #fff;
+    height: fit-content;
+    position: absolute;
+    top: 8rem;
+}
+
+.page-search form{
+    width: 100%;
+}
+
+.page-search form input{
+    padding: 10px;
+    font-size: 6rem;
+    text-align: center;
+    border: none;
+    width: 100%;
+    background: none;
+    color: #fff;
+    font-family: Roboto, arial, sans-serif;
+}
+
+.page-search .header{
+    text-align: center;
+    font-size: 16px;
+    color: #fff;
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 3rem;
+}
+
+.page-search .header a{
+    color: rgb(230, 230, 230);
+    text-decoration: none;
+}
+.page-search .header a:hover{
+    text-decoration: underline;
+}
+
+
+@media screen and (max-width: 800px){
+    .page-search form input{
+        font-size: 4rem;
+    }
+}
+
+@media screen and (max-width: 470px){
+    html{
+        font-size: 12px;
+    }
+}
+
+@media screen and (max-height: 500px){
+    .page-search .title{
+        top: 3rem;
+    }
+}
+
+@media screen and (max-height: 300px) {
+    .page-search .header{
+        display: none;
+    }
+}
+
+@media screen and (max-height: 250px) {
+    .page-search .title{
+        display: none;
+    }
+}
+

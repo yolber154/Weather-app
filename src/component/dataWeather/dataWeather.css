@@ -1,0 +1,19 @@
+.page-view .data-weather{
+    column-count: 2;
+    padding: 0 1rem 1rem 1rem;
+    margin-bottom: 2rem;
+    background-color: var(--background);
+    box-shadow: 0 2px 4px rgb(105, 105, 105), 0 0 20px rgb(154, 154, 154);
+}
+
+.page-view .data-weather p{
+    padding: 1rem .4rem .4rem 0;
+    border-bottom: 1px solid #000;
+}
+
+.page-view .data-weather > p span{
+    float: right;
+    font-size: .9rem;
+    color: rgb(105, 105, 105);
+    font-weight: bold;
+}

@@ -1,0 +1,94 @@
+.page-view .forescast{
+    position: relative;
+    padding: 1rem;
+    background-color: var(--background);
+    box-shadow: 0 2px 4px rgb(105, 105, 105), 0 0 20px rgb(154, 154, 154);
+}
+.page-view .forescast::before,
+.page-view .forescast::after{
+    display: none !important;
+}
+
+.page-view .forescast .days{
+    display: flex;
+    gap: .8rem;
+    justify-content: space-between;
+    overflow: scroll;
+}
+
+.page-view .forescast .days .day{
+    border: 1px solid rgb(75, 75, 75);
+    text-align: center;
+    padding: .8rem 1.2rem;
+    position: relative;
+}
+
+.page-view .forescast .days .icon-weather img{
+    width: 64px;
+    height: 64px;
+}
+
+.page-view .forescast .days .day .loading{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: #bba1f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-view .forescast .days .day .box p:first-child{
+    font-weight: bold;
+    margin-bottom: 4px;
+}
+
+.page-view .forescast .days .day .box p:last-child{
+    font-size: .9rem;
+}
+
+.page-view .forescast .days .day .icon-weather{
+    margin: .8rem 0;
+}
+
+@media screen and (max-width: 925px){
+    .page-view .forescast:before{
+        content: "<";
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateX(-50%) translateY(-50%);
+        background-color: #6802ce;
+        cursor: pointer;
+    }
+
+    .page-view .forescast::after{
+        content: ">";
+        width: 30px;
+        height: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        color: #fff;
+        font-weight: bold;
+        border-radius: 50%;
+        position: absolute;
+        top: 50%;
+        right: 0;
+        transform: translateX(50%) translateY(-50%);
+        background-color: #6802ce;
+        cursor: pointer;
+    }
+}

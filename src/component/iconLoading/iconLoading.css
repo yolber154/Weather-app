@@ -1,0 +1,28 @@
+.wrapper-icon{
+    width: 100px;
+    height: 100px;
+    padding: 2px;
+}
+
+.wrapper-icon,
+.wrapper-icon *{
+    box-sizing: border-box;
+}
+
+.wrapper-icon .circle{
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    border: 10px solid rgb(115, 115, 115);
+    border-right-color: #db22cf;
+
+    animation: loading .9s cubic-bezier(.45,.05,.55,.95) infinite;
+}
+
+@keyframes loading {
+    0%{
+        transform: rotateZ(0);
+    }100%{
+        transform: rotateZ(1turn);
+    }
+}

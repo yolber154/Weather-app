@@ -1,0 +1,24 @@
+.page-not-found .content-error{
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.page-not-found .content-error .img-error{
+    height: 150px;
+    margin-bottom: 4rem;
+}
+
+.page-not-found .content-error .title{
+    font-size: 3rem;
+    font-weight: bold;
+    margin-bottom: 1.7rem;
+}
+
+.page-not-found .content-error .description{
+    font-size: 1.5rem;
+    margin-bottom: 1.7rem;
+}
+
+.page-not-found .content-error .img-arrow{
+    width: 60px;
+}

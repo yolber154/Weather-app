@@ -1,0 +1,63 @@
+.page-view{
+    width: 100%;
+    max-width: 1000px;
+    margin: auto;
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    color: #1c1c1c;
+    --background: rgba(255, 255, 255, 0.48);
+}
+
+.page-view form{
+    width: 100%;
+    height: 140px;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.page-view form input{
+    font-family: Roboto, Arial, Helvetica, sans-serif;
+    width: 500px;
+    max-width: 100%;
+    font-size: 1.2rem;
+    padding: 0.7rem 1.2rem;
+    border-radius: 100px;
+    outline: none;
+    border: none;
+    box-shadow: 0 0 3px #000;
+}
+.page-view form input:focus{
+    /* border-bottom: 3px solid rgb(92, 43, 236); */
+    box-shadow: 
+        0 4px 0 rgb(162, 28, 172),
+        0 1px 8px #000;
+}
+
+.page-view .content{
+    padding: 0 1rem 0 1rem;
+}
+
+@media screen and (max-width: 640px){
+    .page-view .wrapper-main .main > div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .page-view .data-weather > p span{
+        float: none;
+        display: block;
+        margin-top: .4rem;
+    }
+}
+
+@media screen and (max-width: 500px){
+    html{
+        font-size: 14px;
+    }
+    .page-view .data-weather{
+        column-count: 1;
+    }
+}
+
