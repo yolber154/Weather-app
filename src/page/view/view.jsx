@@ -9,7 +9,7 @@ export function PageView({weather, onSubmit}){
     const date = new Date(weather.location.localtime)
     return(
         <>
-            <Graddient />
+            <Graddient weather={weather} />
             <div className="page-view">
                 <Form onSubmit={onSubmit} />
                 <div className="content">

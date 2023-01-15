@@ -36,7 +36,7 @@ function AppWeather() {
   }
 
   if(isLoading) return <PageLoading />
-  else if(!weather) return <PageSearch onSubmit={handleSubmit} />
+  else if(!weather) return <PageSearch weather={weather} onSubmit={handleSubmit} />
   else if(weather.current) return <PageView weather={weather} onSubmit={handleSubmit} />
   else if(weather.error) return <PageNotFound weather={weather} />
 }

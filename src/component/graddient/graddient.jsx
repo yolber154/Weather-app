@@ -1,14 +1,17 @@
 import { useRef, useEffect } from 'react'
 import './graddient.css'
 
-export function Graddient(){
+export function Graddient({weather}){
     const divRef = useRef()
     useEffect(() => {
-        window.addEventListener("load", () => {
-            const height = document.body.offsetHeight
-            divRef.current.style.height = height + "px"
-        })
-    },[])
+        resetHeight()
+        window.addEventListener("load", resetHeight)
+    },[weather])
+
+    const resetHeight = () => {
+        const height = document.body.offsetHeight
+        divRef.current.style.height = height + "px"
+    }
 
     return <div id="graddient" ref={divRef}></div>
 }
